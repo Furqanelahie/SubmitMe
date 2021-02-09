@@ -28,7 +28,7 @@ const get_string= mykey;
 
 
 const firebaseConfig = {
-    const firebaseConfig = { apiKey: "AIzaSyBJLunaVFMT0OKJBEBM3exOgUCl7WuKl00", authDomain: "hurtless-33668.firebaseapp.com", projectId: "hurtless-33668", storageBucket: "hurtless-33668.appspot.com", messagingSenderId: "1037111034293", appId: "1:1037111034293:web:2b22b203d4f55884f019fc", measurementId: "G-MN87Y7MHNN" };
+    const firebaseConfig = { apiKey: "AIzaSyBJLunaVFMT0OKJBEBM3exOgUCl7WuKl00", authDomain: "hurtless-33668.firebaseapp.com", projectId: "hurtless-33668", storageBucket: "hurtless-33668.appspot.com", messagingSenderId: "1037111034293", appId: "1:1037111034293:web:2b22b203d4f55884f019fc", measurementId: "G-MN87Y7MHNN" 
 
 };
 // Initialize Firebase
