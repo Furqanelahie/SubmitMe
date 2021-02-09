@@ -2,7 +2,7 @@ var mykey = localStorage.getItem("osmkey");
 	     //alert(mykey)
 	      if(mykey===null){
 	      //document.getElementById("bobo").style.display="none"
-	    // document.getElementById("axx").style.display="block"
+	     document.getElementById("axx").style.display="none"
 	      //window.open("./send.html")
 	      }else{
 	        document.getElementById("bobo").style.display="none" 
