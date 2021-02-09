@@ -24,7 +24,7 @@ if (imp_string === null) {
 }*/
 
 
-const get_string= mykey;
+const get_string7= mykey;
 
 
 const firebaseConfig = {
@@ -105,7 +105,7 @@ function login () {
     return false; 
 }
 */
-firebase.database().ref(get_string).on("child_added", (snapshot) => {
+firebase.database().ref(get_string7).on("child_added", (snapshot) => {
     let html = document.querySelector(".messages").innerHTML;
     
     
