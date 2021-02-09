@@ -145,6 +145,6 @@ firebase.database().ref(get_string7).on("child_added", (snapshot) => {
     
     topbaar.classList.add(color_design);
     */
-    document.querySelector(".messages").innerHTML = `<div class="message-' + ${color_design} + '  t h br25px mar"><span class="sp">SomeOne</span><div class="boxes"><p class="q">How much you like furqan</p><p class="a">${snapshot.val().sender}</p><p class="q">Say something </p><p  class="a m4">${snapshot.val().message}</p><br></div></div>` + html;
+    document.querySelector(".messages").innerHTML = `<div class="message-' + ${color_design} + '  t h br25px mar"><span class="sp">SomeOne</span><div class="boxes"><p class="q">How much you like me</p><p class="a">${snapshot.val().sender}</p><p class="q">Say something </p><p  class="a m4">${snapshot.val().message}</p><br></div></div>` + html;
 })
 
