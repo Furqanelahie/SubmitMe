@@ -64,7 +64,7 @@
 <center><hr>
 <button id="bobo" onclick="get_start()">GENERATE YOUR LINK </button><br>
 
-  <a id="axx" href="https://furqanelahie.github.io/SubmitMe/index.html">View Your Responses </a>
+  <a id="axx" href="https://furqanelahie.github.io/SubmitMe/responses.html">View Your Responses </a>
   </center>
   <hr>
   <input  style="width:100%;display:none" id="txtar"></input>
@@ -92,7 +92,7 @@ Information
 	      if(!mykey===null){
 	      document.getElementById("bobo").style.display="none"
 	     document.getElementById("axx").style.display="block"
-	      //window.open("./send.html")
+	      //window.open("./index.html")
 	      }
 	      
 	      function open_pop_up() {
@@ -106,18 +106,18 @@ function close_pop_up() {
 function get_start(){
   open_pop_up()
   let r = Math.random().toString(36).substring(3); 
- // console.log("http://localhost:7800/send?c=" ,r);
+ // console.log("https://submitme.netlify.app/index?c=" ,r);
   
       var input = document.createElement('input');
     actual_txt2.appendChild(input);
-      input.value = "https://furqanelahie.github.io/SubmitMe/send.html?c="+r;
+      input.value = "https://submitme.netlify.app/index.html?c="+r;
       input.select();
       document.execCommand('copy');
       actual_txt2.removeChild(input);
     // alert("Link Copied");
       
       
-  document.getElementById("actual_txt").value="https://furqanelahie.github.io/SubmitMe/send.html?c="+r;
+  document.getElementById("actual_txt").value="https://submitme.netlify.app/index.html?c="+r;
   
   actual_txt.style.color="black"
   pap.style.color="green"
