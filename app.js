@@ -28,8 +28,15 @@ const get_string= mykey;
 
 
 const firebaseConfig = {
-     apiKey: "AIzaSyBJLunaVFMT0OKJBEBM3exOgUCl7WuKl00", authDomain: "hurtless-33668.firebaseapp.com", projectId: "hurtless-33668", storageBucket: "hurtless-33668.appspot.com", messagingSenderId: "1037111034293", appId: "1:1037111034293:web:2b22b203d4f55884f019fc", measurementId: "G-MN87Y7MHNN" 
-
+  
+     apiKey: "AIzaSyBX2lZTMr2xL9C7Ti9znlE9ih-r4Iroo80",
+  authDomain: "freefirefurqan.firebaseapp.com",
+  databaseURL: "https://freefirefurqan.firebaseio.com",
+  projectId: "freefirefurqan",
+  storageBucket: "freefirefurqan.appspot.com",
+  messagingSenderId: "755869413215",
+  appId: "1:755869413215:web:e81d6f35a3302a09c890ea",
+  measurementId: "G-6WV6QZ6DRB"
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
