@@ -21,12 +21,12 @@ var urlimp = new URL(browsed_url);
 var imp_string = urlimp.searchParams.get("c");
 console.log(imp_string);
 if (imp_string === null) {
-  alert("Sorry Not Found ")
+ // alert("Sorry Not Found ")
 //window.open("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXAOSh8-1Xjv5_dYmI03cJLMo43fAkov4ibQ&usqp=CAU")
  // document.body.style.display="none"
   //document.body.innerHTML="Not Found "
 }else{
-  alert("Found")
+ // alert("Found")
   
   
 }
