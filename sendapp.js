@@ -8,7 +8,7 @@ var mykey = localStorage.getItem("osmkey");
 	        document.getElementById("bobo").style.display="none" 
 	        document.getElementById("axx").style.display="block"
 	        document.getElementById("txtar").style.display="block"
-	        document.getElementById("txtar").value= "http://localhost:7700/send.html?c="+mykey;
+	        document.getElementById("txtar").value= "https://submitme.netlify.app/?c="+mykey;
 	        
 	        document.getElementById("txtar").style.color="green"
 	        
