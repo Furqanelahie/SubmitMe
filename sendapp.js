@@ -35,6 +35,33 @@ if (imp_string === null) {
 const get_string= imp_string;
 
 
+  var firebaseConfig = {
+
+    apiKey: "AIzaSyAwn63w4RUrCZmC4cxOQSNYQ78TtQTcKd4",
+
+    authDomain: "project-8666.firebaseapp.com",
+
+    databaseURL: "https://project-8666.firebaseio.com",
+
+    projectId: "project-8666",
+
+    storageBucket: "project-8666.appspot.com",
+
+    messagingSenderId: "516690972979",
+
+    appId: "1:516690972979:web:c013a5d41293d8d598ee46",
+
+    measurementId: "G-4GX28ZZV4W"
+
+  };
+
+  // Initialize Firebase
+
+  firebase.initializeApp(firebaseConfig);
+
+  
+
+/*
 const firebaseConfig = {
     apiKey: "AIzaSyAHKgDIS_phtBzaZg3u2VZqHuTN_QmMfJI",
     authDomain: "fir-chat-e85ad.firebaseapp.com",
@@ -48,7 +75,7 @@ const firebaseConfig = {
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
-
+*/
 
 
 function sendMessage () {
