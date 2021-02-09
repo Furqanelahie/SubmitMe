@@ -28,19 +28,18 @@ const get_string= mykey;
 
 
 const firebaseConfig = {
-  
-     apiKey: "AIzaSyBX2lZTMr2xL9C7Ti9znlE9ih-r4Iroo80",
-  authDomain: "freefirefurqan.firebaseapp.com",
-  databaseURL: "https://freefirefurqan.firebaseio.com",
-  projectId: "freefirefurqan",
-  storageBucket: "freefirefurqan.appspot.com",
-  messagingSenderId: "755869413215",
-  appId: "1:755869413215:web:e81d6f35a3302a09c890ea",
-  measurementId: "G-6WV6QZ6DRB"
+    apiKey: "AIzaSyAHKgDIS_phtBzaZg3u2VZqHuTN_QmMfJI",
+    authDomain: "fir-chat-e85ad.firebaseapp.com",
+    databaseURL: "https://fir-chat-e85ad.firebaseio.com",
+    projectId: "fir-chat-e85ad",
+    storageBucket: "fir-chat-e85ad.appspot.com",
+    messagingSenderId: "266794827210",
+    appId: "1:266794827210:web:125446662fa0b2c77be333",
+    measurementId: "G-6GRRBM1H39"
 };
-
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
+
 
 
 name = "User"
