@@ -27,6 +27,7 @@ if (imp_string === null) {
 const get_string7= mykey;
 
 
+/*
 const firebaseConfig = {
     apiKey: "AIzaSyAHKgDIS_phtBzaZg3u2VZqHuTN_QmMfJI",
     authDomain: "fir-chat-e85ad.firebaseapp.com",
@@ -37,10 +38,11 @@ const firebaseConfig = {
     appId: "1:266794827210:web:125446662fa0b2c77be333",
     measurementId: "G-6GRRBM1H39"
 };
+
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
+*/
 
-/*
   // Your web app's Firebase configuration
   // For Firebase JS SDK v7.20.0 and later, measurementId is optional
   var firebaseConfig = {
@@ -56,7 +58,7 @@ firebase.initializeApp(firebaseConfig);
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   
-*/
+
 
 name = "User"
 
