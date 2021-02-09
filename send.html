@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Firebase</title>
+	<!-- FontAwesome -->
+	<script src="https://kit.fontawesome.com/c9705384ae.js" crossorigin="anonymous"></script>
+	<!-- The core Firebase JS -->
+	<script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-app.js"></script>
+	<!-- Firebase Database-->
+	<script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-database.js"></script>
+	<!-- Local Files -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="mystyle.css">
+ 		<link rel="stylesheet" type="text/css" href="menu.css">
+ 
+    <!-- Optimized for mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+  <!--
+	<div class = "login">
+		<h1>Talk to the whole world. Anytime. Anywhere.</h1>
+		<img src="https://i.ibb.co/7X1MrGL/undraw-connected-world-wuay.png" alt="undraw-connected-world-wuay" border="0">
+		<form onsubmit="return login()">
+			<label for = "name">Enter your name:</label>
+			<input class = "login-form" type="text" name="name" placeholder="Enter your name" autocomplete="off" required="true">
+			<button class = "start" type="submit" value="Get started">Get started</button>
+
+		</form>
+		---->
+		
+	</div>
+	<div class = "messenger">
+		<div  id="topbar" class = "top-bar">
+			<span>SubmitMe</span>
+			<span><i style="display:none" class="fa fa-user-circle"></i><span id="pert" class = "username">Me</span></span>
+		</div>
+		<center>
+		  <div  id="tour">
+		  <p class="com" style="margin-top:5vh;color:white">How much you like <span>Me</span></p>
+		    
+<div class="box">
+  <select id="per">
+    <option selected disabled  value="not">Select </option>
+    <option value="0%">O%</option>
+    <option value="30%">30%</option>
+    <option value="50%">50%</option>
+    <option value="80%">80%</option>
+    <option value="100%">100%</option>
+  </select>
+</div>
+		   <p class="com" style="margin-top:21vh;color:white;">Say something to <span>Me</span></p>
+		  <textarea placeholder="Say Something " class="message" style="font-size:15px;height:24vh;border-radius:0px;margin-top:1vh;border:1px solid red;"/>
+		 <br>
+		 <button class="com" onclick="sendMessage()" type="submit">Submit</button>
+		 </form> </center>
+		<center>
+		  
+		    <center><p id="Succ" style="color:green;display:none;margin-top:10vh"><br>Successfully sent To <span id="pert"></span></p></center>
+</center>
+
+<center><hr>
+<button id="bobo" onclick="get_start()">GENERATE YOUR LINK </button><br>
+
+  <a id="axx" href="/responces.html">View Your Responses </a>
+  </center>
+  <hr>
+  <input  style="width:100%;display:none" id="txtar"></input>
+<div id="menu_container">
+<div id="menu_self">
+<div id="menu_content">
+<div id="menu_head">
+Information
+</div>
+<div onclick="close_pop_up()" id="menu_close">
+<span id="s_p_a_n">×</span>
+</div>
+<textarea id="actual_txt">
+      </textarea>
+      <p id="pap" style="color:black">Send this link to your friends </p>
+</div>
+</div>
+</div>
+	   <script defer type="text/javascript" src = "sendapp.js"></script>
+	      <script  type="text/javascript" src ="menu.js"></script>
+	      <script>
+	      
+	      var mykey = localStorage.getItem("osmkey");
+	     //alert(mykey)
+	      if(!mykey===null){
+	      document.getElementById("bobo").style.display="none"
+	     document.getElementById("axx").style.display="block"
+	      //window.open("./send.html")
+	      }
+	      
+	      function open_pop_up() {
+  menu_container.style.display = "block"
+}
+
+function close_pop_up() {
+  menu_container.style.display = "none"
+}
+
+function get_start(){
+  open_pop_up()
+  let r = Math.random().toString(36).substring(3); 
+ // console.log("http://localhost:7800/send?c=" ,r);
+  
+      var input = document.createElement('input');
+    actual_txt2.appendChild(input);
+      input.value = "http://localhost:7700/send.html?c="+r;
+      input.select();
+      document.execCommand('copy');
+      actual_txt2.removeChild(input);
+    // alert("Link Copied");
+      
+      
+  document.getElementById("actual_txt").value="http://localhost:7700/send.html?c="+r;
+  
+  actual_txt.style.color="black"
+  pap.style.color="green"
+ localStorage.setItem("osmkey", r);
+ document.getElementById("bobo").style.display="none"
+}
+
+	      </script>
+	      <div id="actual_txt2">
+	        </div>
+</body>
+</html>
